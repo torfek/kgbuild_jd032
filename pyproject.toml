@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "torfek-kgbuild_jd032"
+version = "0.1.0"
+description = "从样本里推断知识图谱构建工程师·查询改写的语义漂移应有的字段集合，逐字段检查存在性与类型，缺失项单独列出"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "torfek" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://torfek.github.io"
+Repository = "https://github.com/torfek/kgbuild_jd032"
+Issues = "https://github.com/torfek/kgbuild_jd032/issues"
+
+[project.scripts]
+kgbuild_jd032 = "kgbuild_jd032:main"
+
+[tool.setuptools]
+py-modules = ["kgbuild_jd032"]
